@@ -5,7 +5,9 @@ import { parseCliArguments } from './arguments'
 import { showHelp } from './commands/help'
 import { version } from '../../package.json'
 
+// 入口执行
 async function main() {
+  // 处理打包配置参数，获取标准的参数
   const cliOptions = parseCliArguments()
 
   if (cliOptions.config) {

@@ -4,6 +4,7 @@ import { outputCliOptionsSchema } from '../../options/output-options'
 import type { ObjectSchema } from './types'
 import { z } from 'zod'
 
+// 定义并验证 CLI 的输入选项，同时提供类型化和 JSON Schema 转换。
 export const cliOptionsSchema = z
   .strictObject({
     config: z

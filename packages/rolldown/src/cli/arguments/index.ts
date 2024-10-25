@@ -50,6 +50,7 @@ export const options = Object.fromEntries(
 export type ParseArgsOptions = typeof options
 
 export function parseCliArguments() {
+  // 用于解析命令行参数
   const { values, tokens, positionals } = parseArgs({
     options,
     tokens: true,
